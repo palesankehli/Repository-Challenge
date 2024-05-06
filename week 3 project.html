@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dessert candles</title>
+
+    <!-- Start of CSS -->
+    <style>
+      body {
+        text-align: center;
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(254, 255, 165) 0%,
+          rgb(255, 232, 182) 90%
+        );
+      }
+
+      h1 {
+        color: #e65045;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 60px;
+        text-shadow: 1px 1px 2px #f57b5d, 0 0 1em #f57b5d, 0 0 0.2em #f57b5d;
+        border: solid;
+        box-shadow: 8px 9px 22px 1px rgba(236, 135, 85, 0.5);
+        margin: 0 auto; /* Set left and right margin to auto */
+        width: 50%;
+        display: inline-block;
+        width: max-content;
+        white-space: nowrap;
+        padding: 12px 16px;
+      }
+
+      h2 {
+        color: #ff8264;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        margin: 25px;
+      }
+
+      img {
+        border: transparent;
+        box-shadow: 8px 9px 22px 1px rgba(236, 135, 85, 0.5);
+        border-radius: 9px;
+      }
+
+      hr {
+        border-color: #dd4848;
+        border: transparent;
+      }
+
+      .paragraphs {
+        line-height: 150%;
+      }
+
+      .description {
+        color: #dd4848;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      .ingredients {
+        color: #f59a4f;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      .flavours {
+        color: #b64926;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      button {
+        font-weight: bold;
+        border: solid;
+        background: #ffecb3;
+        color: #dd4848;
+        border-radius: 14px;
+        border-width: 2px;
+        padding: 9px;
+        cursor: pointer;
+        transition: 100ms;
+      }
+
+      button:hover {
+        color: rgb(247, 201, 201);
+        background: #dd4848;
+      }
+
+      p {
+        color: #dd4848;
+      }
+
+      a {
+        text-decoration: none;
+        color: #dd4848;
+      }
+    </style>
+  </head>
+
+  <!-- Start of Body HTML-->
+  <body>
+    <h1>MMM...YUM CANDLES</h1>
+    <h2>Candles that look and smell so yummy😋</h2>
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/445/original/a1dfacf05320b78ff0f99a3d392a6a14.jpg?1713294806"
+      alt="desert-candles"
+    />
+    <hr />
+    <div class="paragraphs">
+      <span class="description">
+        Feast your eyes with our dessert inspired candles that look mouth
+        watering and smell so yummy you would want to eat them! (But don't).
+        <br />
+        Our attention to detail when making our candles might have you thinking
+        it is real dessert!
+      </span>
+      <hr />
+      <span class="ingredients">
+        Our dessert candles are hand crafted using 100% natural soy wax to
+        ensure that you enjoy the scent without worrying about your health!
+        <br />
+        Premium quality ingredients create distinctive true-to-life scents.
+      </span>
+      <hr />
+      <span class="flavours">
+        With our variety of scents and flavours like
+        <strong>Lemon Meringue Pie, Pumpkin Pie and Hot Cocoa</strong>, be sure
+        that there is something for everybody. <br />
+        Whether you like the scent or just for decoration, our candles are the
+        perfect product for you!
+      </span>
+      <hr />
+    </div>
+    <button>SHOP NOW</button>
+    <br />
+
+    <p>
+      <strong>
+        <em>Coded by</em>
+        <a href="https://www.linkedin.com/in/palesa-nkehli-68938029a/"
+          ><em>Palesa Nkehli</em></a
+        >
+      </strong>
+    </p>
+
+    <script>
+      function shopNow() {
+        let fullName = prompt("Please provide your full name");
+        let email = prompt("Please provide your email address");
+
+        if (fullName.length === 0 || email.length === 0)
+          alert("Please fill required details to continue 😐");
+        else {
+          alert("Thank you, " + fullName + ", we will contact you shortly. 🙂");
+        }
+      }
+
+      let shopButton = document.querySelector("button");
+      shopButton.addEventListener("click", shopNow);
+    </script>
+  </body>
+  <!-- End of Body HTML-->
+</html>
